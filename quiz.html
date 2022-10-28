@@ -3,66 +3,421 @@
 <head>
     <meta charset="utf-8">
     <title>Quiz</title>
-    <!-- jquery for maximum compatibility -->
+ <!-- jquery para máxima compatibilidade -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-    /** Simple JavaScript Quiz
-     * version 0.1.0
-     * http://journalism.berkeley.edu
-     * created by: Jeremy Rue @jrue
-     *
-     * Copyright (c) 2013 The Regents of the University of California
-     * Released under the GPL Version 2 license
-     * http://www.opensource.org/licenses/gpl-2.0.php
-     * This program is distributed in the hope that it will be useful, but
-     * WITHOUT ANY WARRANTY; without even the implied warranty of
-     * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-     */
+    
+    var quiztitle = "Jogo de acertos Medidor Eletrônico";
 
-    var quiztitle = "Quiz Title";
-
-    /**
-    * Set the information about your questions here. The correct answer string needs to match
-    * the correct choice exactly, as it does string matching. (case sensitive)
-    *
-    */
+   
     var quiz = [
         {
-            "question"      :   "Q1: Who came up with the theory of relativity?",
+            "question"      :   "Medidor  Q1: Qual é o tipo do medidor de energia?",
             "image"         :   "http://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/220px-Albert_Einstein_Head.jpg",
             "choices"       :   [
-                                    "Sir Isaac Newton",
-                                    "Nicolaus Copernicus",
-                                    "Albert Einstein",
-                                    "Ralph Waldo Emmerson"
+                                    "Medidor eletromecânico",
+                                    "Medidor mecânico",
+                                    "Medidor eletrônico",
                                 ],
-            "correct"       :   "Albert Einstein",
-            "explanation"   :   "Albert Einstein drafted the special theory of relativity in 1905.",
+            "correto"       :   "Medidor eletromecânico",
+            // "explicação"   :   "caso queira por uma breve explicação da resposta correta.",
         },
         {
-            "question"      :   "Q2: Who is on the two dollar bill?",
+            "question"      :   "Medidor  Q1: Qual é o tipo do medidor de energia?",
             "image"         :   "http://upload.wikimedia.org/wikipedia/commons/thumb/9/94/US_%242_obverse-high.jpg/320px-US_%242_obverse-high.jpg",
             "choices"       :   [
-                                    "Thomas Jefferson",
-                                    "Dwight D. Eisenhower",
-                                    "Benjamin Franklin",
-                                    "Abraham Lincoln"
+                                    "Medidor eletromecânico",
+                                    "Medidor mecânico",
+                                    "Medidor eletrônico",
                                 ],
-            "correct"       :   "Thomas Jefferson",
-            "explanation"   :   "The two dollar bill is seldom seen in circulation. As a result, some businesses are confused when presented with the note.",
+            "correto"       :   "Medidor eletrônico",
+           
         },
         {
-            "question"      :   "Q3: What event began on April 12, 1861?",
+            "question"      :   "Tampa Q2: Uma das características da tampa utilizada nos medidores eletrônicos de energia é?",
+            "image"         :   "http://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/220px-Albert_Einstein_Head.jpg",
+            "choices"       :   [
+                                    "Ser transparente",
+                                    "Permitir a entrada de objetos",
+                                    "Ser moldada em várias peças",
+                                    
+                                ],
+            "correto"       :   "Ser transparente",
+        },
+        {
+            "question"      :   "Tampa Q2: As tampas dos medidores eletrônicos de energia podem ser construídas a partir de qual material?",
+            "image"         :   "http://upload.wikimedia.org/wikipedia/commons/thumb/9/94/US_%242_obverse-high.jpg/320px-US_%242_obverse-high.jpg",
+
+            "choices"       :   [
+                                    "Alumínio",
+                                    "Policarbonato",
+                                    "Polipropileno",
+                                    
+                                ],
+            "correto"       :   "Policarbonato",
+            
+        },
+        {
+            "question"      :   "Base Q3: Qual característica não se refere à base dos medidores eletrônicos de energia?",
             "image"         :   "",
             "choices"       :   [
-                                    "First manned flight",
-                                    "California became a state",
-                                    "American Civil War began",
-                                    "Declaration of Independence"
+                                    "Servir de fixação para componentes",
+                                    "Ser fabricada em plástico",
+                                    "Ser fabricada em material flexível e usar rebites para a fixação dos componentes",
+                                   
                                 ],
-            "correct"       :   "American Civil War began",
-            "explanation"   :   "South Carolina came under attack when Confederate soldiers attacked Fort Sumter. The war lasted until April 9th 1865.",
+            "correto"       :   "Ser fabricada em material flexível e usar rebites para a fixação dos componentes",
+           
         },
+        {
+            "question"      :   "Bloco de terminais Q4: No bloco de terminais de um medidor eletrônico, estão inseridos quais componentes?",
+            "image"         :    "http://upload.wikimedia.org/wikipedia/commons/thumb/9/94/US_%242_obverse-high.jpg/320px-US_%242_obverse-high.jpg",
+            "choices"       :   [
+                                    "Bobina de corrente",
+                                    "Terminais de ligação",
+                                    "Bobina de tensão",
+                                    
+                                ],
+            "correto"       :   "Terminais de ligação",
+            
+        },
+        {
+            "question"      :   "Placa de identificação Q5: Nas placas de identificação dos medidores eletrônicos, a constante de pulso virá expressa por qual(is) sigla(s)?",
+            "image"         :  "http://upload.wikimedia.org/wikipedia/commons/thumb/9/94/US_%242_obverse-high.jpg/320px-US_%242_obverse-high.jpg",
+            "choices"       :   [
+                                    "Kd",
+                                    "Rr",
+                                    "Kh ou Ke",
+                                    
+                                ],
+            "correto"       :   "American Civil War began",
+           
+        },
+        {
+            "question"      :   "Placa de identificação Q5: Uma das informações mostradas nas placas de identificação dos medidores eletrônicos é?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "Corrente nominal",
+                                    "Tensão mínima",
+                                    "Tensão máxima",
+                                    
+                                ],
+            "correto"       :   "Corrente nominal",
+            
+        },
+        {
+            "question"      :   "Placa de identificação Q5: Qual é a unidade de medida da energia elétrica ativa mostrada nas placas de identificação dos medidores eletrônicos?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "kWh",
+                                    "Ampère",
+                                    "Kelvin",
+                                   
+                                ],
+            "correto"       :   "kWh",
+           
+        },
+        {
+            "question"      :   "Placa de identificação Q5: Qual é o nome do fabricante e qual é o modelo do medidor eletrônico indicados nesta placa de identificação?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "Elo série 21 e Elo 2106 D",
+                                    "Elo série 21 e SL 162",
+                                    "RGE e Elo 2106 D",
+                                ],
+            "correto"       :   "Elo série 21 e Elo 2106 D",
+            
+        },
+        {
+            "question"      :   "Placa de identificação Q5: Qual é a frequência elétrica do medidor eletrônico mostrada nesta placa de identificação?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "60 Hz",
+                                    "50 Hz",
+                                    "40 Hz",
+                                ],
+            "correto"       :   "60 Hz",
+            
+        },
+        {
+            "question"      :   "Placa de identificação Q5: Qual é a tensão nominal do medidor eletrônico mostrada nesta placa de identificação?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "127 V",
+                                    "220 V",
+                                    "120 V ou 240 V",
+                                ],
+            "correto"       :   "120 V ou 240 V",
+            
+        },
+        {
+            "question"      :   "Placa de identificação Q5: Qual é o valor da corrente nominal do medidor eletrônico mostrado nesta placa de identificação?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "Corrente nominal de 15 A",
+                                    "Corrente nominal de 10 A",
+                                    "Corrente nominal de 5 A",
+                                ],
+            "correto"       :   "Corrente nominal de 15 A",
+            
+        },
+        {
+            "question"      :   "Placa de identificação Q5: Qual é o valor da constante de pulso do medidor eletrônico mostrado nesta placa de identificação?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "10",
+                                    "15",
+                                    "120",
+                                ],
+            "correto"       :   "10",
+            
+        },
+        {
+            "question"      :   "Selagem/lacres Q4: Os novos medidores eletrônicos virão com quais tipos de lacres?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "De chumbo, com numeração",
+                                    "De policarbonato, com numeração",
+                                    "De alumínio, com numeração",
+                                ],
+            "correto"       :   "De policarbonato, com numeração",
+            
+        },
+        {
+            "question"      :   "Registrador de motor de passo/display de LCD Q5: O registrador de motor de passo é controlado por qual dispositivo?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "Disco",
+                                    "Microcontrolador presente na placa eletrônica que emite sinais elétricos de controle",
+                                    "Elemento motor",
+                                ],
+            "correto"       :   "Microcontrolador presente na placa eletrônica que emite sinais elétricos de controle",
+            
+        },
+        {
+            "question"      :   "Diodo Q6: Qual é o nome do componente eletrônico mostrado na figura?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "Resistor",
+                                    "Diodo",
+                                    "Transistor",
+                                ],
+            "correto"       :   "Diodo",
+            
+        },
+       
+        {
+            "question"      :   "Diodo Q6: Os diodos permitem a passagem da corrente elétrica?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "Em apenas um sentido",
+                                    "Nos dois sentidos",
+                                    "Do cátodo para o ânodo",
+                                ],
+            "correto"       :   "Em apenas um sentido",
+            
+        },
+        {
+            "question"      :   "Diodo Q6: Nos diodos, a corrente elétrica flui para qual terminal?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "Do ânodo para o cátodo",
+                                    "Do ânodo para o cátodo e vice-versa",
+                                    "Do cátodo para o ânodo",
+                                ],
+            "correto"       :   "Do ânodo para o cátodo",
+            
+        },
+        {
+            "question"      :   "Indutor Q7: Qual é o nome deste componente eletrônico?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "Indutor",
+                                    "Varistor",
+                                    "Transistor",
+                                ],
+            "correto"       :   "Indutor",
+            
+        },
+        {
+            "question"      :   "Indutor Q7: Os indutores também são chamados de?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "Bobinas ou solenoides",
+                                    "Bobinas ou resistores",
+                                    "Solenoides ou transistores",
+                                ],
+            "correto"       :   "Bobinas ou solenoides",
+            
+        },
+        {
+            "question"      :   "Indutor Q7: Qual é a principal função de um indutor?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "Armazenar energia por meio de um campo magnético",
+                                    "Permitir a passagem da corrente elétrica somente em um sentido",
+                                    "Acumular cargas elétricas em um circuito",
+                                ],
+            "correto"       :   "Armazenar energia por meio de um campo magnético",
+            
+        },
+        {
+            "question"      :   "Microcontrolador Q8: Qual é uma das funções do microcontrolador?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "Processar os valores dos sinais de tensão e corrente e calcular e registrar o consumo de energia",
+                                    "Processar e calcular as informações de corrente",
+                                    "Processar e calcular as informações de tensão",
+                                ],
+            "correto"       :   "Processar os valores dos sinais de tensão e corrente e calcular e registrar o consumo de energia",
+            
+        },
+        {
+            "question"      :   "Capacitor Q9: Qual é o nome do componente eletrônico mostrado na figura?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "Varistor",
+                                    "Capacitor",
+                                    "Diodo",
+                                ],
+            "correto"       :   "Capacitor",
+            
+        },
+        {
+            "question"      :   "Capacitor Q9: Qual é a principal função do capacitor?",
+            "image"         :   "",
+            "choices"       :   [
+                                    " Armazenar energia por meio de um campo magnético",
+                                    "Permitir a passagem da corrente elétrica somente em um sentido",
+                                    "Armazenar energia elétrica por meio de campos elétricos gerados por cargas elétricas",
+                                ],
+            "correto"       :   "Armazenar energia elétrica por meio de campos elétricos gerados por cargas elétricas",
+            
+        },
+        {
+            "question"      :   "Resistor Q10: Qual é o nome do componente eletrônico mostrado na figura?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "Varistor",
+                                    "Resistor",
+                                    "Capacitor",
+                                ],
+            "correto"       :   "Resistor",
+            
+        },
+        {
+            "question"      :   "Resistor Q10: Qual é a função dos resistores?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "Permitir a passagem da corrente elétrica somente em um sentido",
+                                    "Acumular cargas elétricas",
+                                    "Controlar a passagem da corrente elétrica em determinado ponto do circuito",
+                                ],
+            "correto"       :   "Controlar a passagem da corrente elétrica em determinado ponto do circuito",
+            
+        },
+        {
+            "question"      :   "Resistor Q10: Os resistores realizam qual tipo de conversão?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "Conversão de energia elétrica em energia térmica",
+                                    "Conversão de energia térmica em energia elétrica",
+                                    "Conversão de energia elétrica em energia cinética",
+                                ],
+            "correto"       :   "Conversão de energia elétrica em energia térmica",
+            
+        },
+       
+        {
+            "question"      :   "Varistor Q11: Qual é o nome deste componente eletrônico?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "Varistor",
+                                    "Resistor",
+                                    "Capacitor",
+                                ],
+            "correto"       :   "Varistor",
+            
+        },
+        {
+            "question"      :   "Varistor Q11: Qual é a função do varistor?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "Proteger os circuitos eletrônicos contra sobretensões",
+                                    "Acumular cargas elétricas",
+                                    "Amplificar a corrente elétrica",
+                                ],
+            "correto"       :   "Proteger os circuitos eletrônicos contra sobretensões",
+            
+        },
+        {
+            "question"      :   "Capacitor supressor Q12: O capacitor supressor também recebe o nome de?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "Capacitor de segurança",
+                                    "Capacitor de ruídos",
+                                    "Capacitor de picos de tensão",
+                                ],
+            "correto"       :   "Capacitor de segurança",
+            
+        },
+        {
+            "question"      :   "Capacitor supressor Q12: Nas placas eletrônicas, onde ficam localizados os capacitores de supressão?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "Na entrada de alimentação das placas eletrônicas",
+                                    "Na saída das fontes de alimentação das placas eletrônicas",
+                                    "Nos terminais de ligação",
+                                ],
+            "correto"       :   "Na entrada de alimentação das placas eletrônicas",
+            
+        },
+        {
+            "question"      :   "Sensor de corrente Q13: Qual é a função deste componente?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "Detectar o sinal da corrente elétrica",
+                                    "Detectar o sinal da tensão",
+                                    "Detectar o sinal da resistência do circuito",
+                                ],
+            "correto"       :   "Detectar o sinal da corrente elétrica",
+            
+        },
+        {
+            "question"      :   "LED Q14: Qual é o nome deste componente?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "LED",
+                                    "Diodo zener",
+                                    "Diodo retificador",
+                                ],
+            "correto"       :   "LED",
+            
+        },
+        {
+            "question"      :   "LED Q14: Qual é o nome deste componente?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "LED",
+                                    "Diodo zener",
+                                    "Diodo retificador",
+                                ],
+            "correto"       :   "LED",
+            
+        },
+        {
+            "question"      :   "LED Q14: Qual é a função do LED emissor de pulso nos medidores eletrônicos?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "Pulsar a cada quantidade de energia medida",
+                                    "Pulsar quando a energia circular entre os terminais de linha e carga do medidor",
+                                    "Piscar quando há fluxo da corrente elétrica",
+                                ],
+            "correto"       :   "Pulsar a cada quantidade de energia medida",
+            
+        },
+
+
 
     ];
 
@@ -121,20 +476,20 @@
          * @param {choice} number The li zero-based index of the choice picked
          */
         function processQuestion(choice){
-            if(quiz[currentquestion]['choices'][choice] == quiz[currentquestion]['correct']){
+            if(quiz[currentquestion]['choices'][choice] == quiz[currentquestion]['correto']){
                 $('.choice').eq(choice).css({'background-color':'#50D943'});
-                $('#explanation').html('<strong>Correct!</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
+                $('#explanation').html('<strong>Correto!</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
                 score++;
             } else {
                 $('.choice').eq(choice).css({'background-color':'#D92623'});
-                $('#explanation').html('<strong>Incorrect.</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
+                $('#explanation').html('<strong>Incorreto.</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
             }
             currentquestion++;
-            $('#submitbutton').html('NEXT QUESTION &raquo;').on('click', function(){
+            $('#submitbutton').html('Proxima questão &raquo;').on('click', function(){
                 if(currentquestion == quiz.length){
                     endQuiz();
                 } else {
-                    $(this).text('Check Answer').css({'color':'#222'}).off('click');
+                    $(this).text('Verificar resposta').css({'color':'#222'}).off('click');
                     nextQuestion();
                 }
             })
@@ -173,7 +528,7 @@
             $('#question').empty();
             $('#choice-block').empty();
             $('#submitbutton').remove();
-            $('#question').text("You got " + score + " out of " + quiz.length + " correct.");
+            $('#question').text("You got " + score + " out of " + quiz.length + " correto.");
             $(document.createElement('h2')).css({'text-align':'center', 'font-size':'4em'}).text(Math.round(score/quiz.length * 100) + '%').insertAfter('#question');
         }
 
@@ -207,7 +562,7 @@
                 addChoices(quiz[0]['choices']);
             
                 //add submit button
-                $(document.createElement('div')).addClass('choice-box').attr('id', 'submitbutton').text('Check Answer').css({'font-weight':700,'color':'#222','padding':'30px 0'}).appendTo('#frame');
+                $(document.createElement('div')).addClass('choice-box').attr('id', 'submitbutton').text('Verificar resposta').css({'font-weight':700,'color':'#222','padding':'30px 0'}).appendTo('#frame');
             
                 setupButtons();
             }
@@ -229,8 +584,8 @@
         p.pager{margin:5px 0 5px; font:bold 1em/1em "Helvetica Neue", Helvetica, Arial, sans-serif;color:#999;}
         img.question-image{display:block;max-width:250px;margin:10px auto;border:1px solid #ccc;width:100%;height:auto;}
         #choice-block{display:block;list-style:none;margin:0;padding:0;}
-        #submitbutton{background:#5a6b8c;}
-        #submitbutton:hover{background:#7b8da6;}
+        #submitbutton{background:#375a64;}
+        #submitbutton:hover{background:#375a64;}
         #explanation{margin:0 auto;padding:20px;width:75%;}
         .choice-box{display:block;text-align:center;margin:8px auto;padding:10px 0;border:1px solid #666;cursor:pointer;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
     </style>
