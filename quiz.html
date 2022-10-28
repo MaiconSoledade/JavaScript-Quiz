@@ -422,21 +422,21 @@
     ];
 
 
-    /******* No need to edit below this line *********/
+    /******* Não há necessidade de editar abaixo desta linha *********/
     var currentquestion = 0, score = 0, submt=true, picked;
 
     jQuery(document).ready(function($){
 
         /**
-         * HTML Encoding function for alt tags and attributes to prevent messy
-         * data appearing inside tag attributes.
+         * Função de codificação HTML para tags e atributos alt para evitar confusão
+         * dados que aparecem dentro dos atributos da tag.
          */
         function htmlEncode(value){
           return $(document.createElement('div')).text(value).html();
         }
 
         /**
-         * This will add the individual choices for each question to the ul#choice-block
+         * Isso adicionará as opções individuais para cada pergunta ao bloco ul#choice
          *
          * @param {choices} array The choices from each question
          */
@@ -450,7 +450,7 @@
         }
         
         /**
-         * Resets all of the fields to prepare for next question
+         * Redefine todos os campos para se preparar para a próxima pergunta
          */
         function nextQuestion(){
             submt = true;
@@ -471,9 +471,9 @@
         }
 
         /**
-         * After a selection is submitted, checks if its the right answer
+         * Depois que uma seleção é enviada, verifica se é a resposta certa
          *
-         * @param {choice} number The li zero-based index of the choice picked
+         * @param {choice} number O índice li baseado em zero da escolha escolhida
          */
         function processQuestion(choice){
             if(quiz[currentquestion]['choices'][choice] == quiz[currentquestion]['correto']){
@@ -496,7 +496,7 @@
         }
 
         /**
-         * Sets up the event listeners for each button.
+         * Configura os ouvintes de eventos para cada botão
          */
         function setupButtons(){
             $('.choice').on('mouseover', function(){
@@ -521,7 +521,7 @@
         }
         
         /**
-         * Quiz ends, display a message.
+         * O questionário termina, exibe uma mensagem.
          */
         function endQuiz(){
             $('#explanation').empty();
@@ -533,7 +533,7 @@
         }
 
         /**
-         * Runs the first time and creates all of the elements for the quiz
+         * Executa pela primeira vez e cria todos os elementos para o quiz
          */
         function init(){
             //add title
