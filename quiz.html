@@ -528,7 +528,7 @@
             $('#question').empty();
             $('#choice-block').empty();
             $('#submitbutton').remove();
-            $('#question').text("You got " + score + " out of " + quiz.length + " correto.");
+            $('#question').text("Você tem " + score + " erro de " + quiz.length + " correto.");
             $(document.createElement('h2')).css({'text-align':'center', 'font-size':'4em'}).text(Math.round(score/quiz.length * 100) + '%').insertAfter('#question');
         }
 
