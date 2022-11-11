@@ -1,7 +1,13 @@
+
+
+// <div data-v-178db346="" class="modal-footer"><button data-v-178db346="" type="button" data-dismiss="modal" class="btn btn-secondary btnclose m-2 pl-5 pr-5 pt-2 pb-2 text-center"> OK </button>
+// <input type="button" value="SAIR" onclick="window.location.reload()"></div> 
+
+
 var questoes = {
     q1: {
 
-        q1enum: "Qual é o tipo do medidor?",
+        q1enum: "Qual é o tipo do medidor de energia?",
       
         q1rescorreta: "Medidor eletromecânico",
       
@@ -13,14 +19,13 @@ var questoes = {
       
         q1image: "images/IMG_7970.png",
       
-        sorteado: false,
       
       },
       q2: {
       
-      q2enum: "Qual é o tipo do medidor?",
+      q2enum: "Qual é o tipo do medidor de energia?",
       
-      q2rescorreta: "Medidor eletromecânico",
+      q2rescorreta: "Medidor eletrônico",
       
       q2_1: "Medidor eletromecânico",
       
@@ -30,570 +35,513 @@ var questoes = {
       
       q2image: "images/IMG_7970.png",
       
-      sorteado: false,
       
       },
       
       q3: {
       
-      q3enum: "Qual é o tipo do medidor?",
+      q3enum: "Uma das características da tampa utilizada nos medidores eletrônicos de energia é?",
       
-      q3rescorreta: "Medidor eletromecânico",
+      q3rescorreta: "Ser transparente",
       
-      q3_1: "Medidor eletromecânico",
+      q3_1: "Ser transparente",
       
-      q3_2: "Medidor mecânico",
+      q3_2: "Permitir a entrada de objetos",
       
-      q3_3: "Medidor eletrônico",
+      q3_3: "Ser moldada em várias peças",
       
-      q3image: "images/IMG_7970.png",
+      q3image: "",
       
-      sorteado: false,
       
       },
       q4: {
       
-      q4enum: "Qual é o tipo do medidor?",
+      q4enum: "As tampas dos medidores eletrônicos de energia podem ser construídas a partir de qual material?",
       
-      q4rescorreta: "Medidor eletromecânico",
+      q4rescorreta: "Policarbonato",
       
-      q4_1: "Medidor eletromecânico",
+      q4_1: "Alumínio",
       
-      q4_2: "Medidor mecânico",
+      q4_2: "Policarbonato",
       
-      q4_3: "Medidor eletrônico",
+      q4_3: "Polipropileno",
       
-      q4image: "images/IMG_7970.png",
+      q4image: "",
       
-      sorteado: false,
       
       },
       q5: {
       
-      q5enum: "Qual é o tipo do medidor?",
+      q5enum: "Qual característica não se refere à base dos medidores eletrônicos de energia?",
       
-      q5rescorreta: "Medidor eletromecânico",
+      q5rescorreta: "Ser fabricada em material flexível e usar rebites para a fixação dos componentes",
       
-      q5_1: "Medidor eletromecânico",
+      q5_1: "Servir de fixação para componentes",
       
-      q5_2: "Medidor mecânico",
+      q5_2: "Ser fabricada em plástico",
       
-      q5_3: "Medidor eletrônico",
+      q5_3: "Ser fabricada em material flexível e usar rebites para a fixação dos componentes",
       
-      q5image: "images/IMG_7970.png",
+      q5image: "",
       
-      sorteado: false,
       
       },
       q6: {
       
-      q6enum: "Qual é o tipo do medidor?",
+      q6enum: "No bloco de terminais de um medidor eletrônico, estão inseridos quais componentes?",
       
-      q6rescorreta: "Medidor eletromecânico",
+      q6rescorreta: "Terminais de ligação",
       
-      q6_1: "Medidor eletromecânico",
+      q6_1: "Bobina de corrente",
       
-      q6_2: "Medidor mecânico",
+      q6_2: "Terminais de ligação",
       
-      q6_3: "Medidor eletrônico",
+      q6_3: "Bobina de tensão",
       
-      q6image: "images/IMG_7970.png",
+      q6image: "",
       
-      sorteado: false,
       
       },
       q7: {
       
-      q7enum: "Qual é o tipo do medidor?",
+      q7enum: "Nas placas de identificação dos medidores eletrônicos, a constante de pulso virá expressa por qual(is) sigla(s)?",
       
-      q7rescorreta: "Medidor eletromecânico",
+      q7rescorreta: "Kh ou Ke",
       
-      q7_1: "Medidor eletromecânico",
+      q7_1: "Kd",
       
-      q7_2: "Medidor mecânico",
+      q7_2: "Rr",
       
-      q7_3: "Medidor eletrônico",
+      q7_3: "Kh ou Ke",
       
-      q7image: "images/IMG_7970.png",
+      q7image: "",
       
-      sorteado: false,
       
       },
       q8: {
       
-      q8enum: "Qual é o tipo do medidor?",
+      q8enum: "Uma das informações mostradas nas placas de identificação dos medidores eletrônicos é?",
       
-      q8rescorreta: "Medidor eletromecânico",
+      q8rescorreta: "Corrente nominal",
       
-      q8_1: "Medidor eletromecânico",
+      q8_1: "Corrente nominal",
       
-      q8_2: "Medidor mecânico",
+      q8_2: "Tensão mínima",
       
-      q8_3: "Medidor eletrônico",
+      q8_3: "Tensão máxima",
       
-      q8image: "images/IMG_7970.png",
+      q8image: "",
       
-      sorteado: false,
       
       },
       q9: {
       
-      q9enum: "Qual é o tipo do medidor?",
+      q9enum: "Qual é a unidade de medida da energia elétrica ativa mostrada nas placas de identificação dos medidores eletrônicos?",
       
-      q9rescorreta: "Medidor eletromecânico",
+      q9rescorreta: "kWh",
       
-      q9_1: "Medidor eletromecânico",
+      q9_1: "kWh",
       
-      q9_2: "Medidor mecânico",
+      q9_2: "Ampère",
       
-      q9_3: "Medidor eletrônico",
+      q9_3: "Kelvin",
       
-      q9image: "images/IMG_7970.png",
-      
-      sorteado: false,
+      q9image: "",
+     
       
       },
       q10: {
       
-      q10enum: "Qual é o tipo do medidor?",
+      q10enum: "Qual é o nome do fabricante e qual é o modelo do medidor eletrônico indicados nesta placa de identificação?",
       
-      q10rescorreta: "Medidor eletromecânico",
+      q10rescorreta: "Elo série 21 e Elo 2106 D",
       
-      q10_1: "Medidor eletromecânico",
+      q10_1: "Elo série 21 e Elo 2106 D",
       
-      q10_2: "Medidor mecânico",
+      q10_2: "Elo série 21 e SL 1621",
       
-      q10_3: "Medidor eletrônico",
+      q10_3: "RGE e Elo 2106 D",
       
-      q10image: "images/IMG_7970.png",
-      
-      sorteado: false,
-      
+      q10image: "",
+    
       },
       q11: {
       
-      q11enum: "Qual é o tipo do medidor?",
+      q11enum: "Qual é a frequência elétrica do medidor eletrônico mostrada nesta placa de identificação?",
       
-      q11rescorreta: "Medidor eletromecânico",
+      q11rescorreta: "60 Hz",
       
-      q11_1: "Medidor eletromecânico",
+      q11_1: "60 Hz",
       
-      q11_2: "Medidor mecânico",
+      q11_2: "50 Hz",
       
-      q11_3: "Medidor eletrônico",
+      q11_3: "40 Hz",
       
-      q11image: "images/IMG_7970.png",
-      
-      sorteado: false,
-      
+      q11image: "",      
       },
       q12: {
       
-      q12enum: "Qual é o tipo do medidor?",
+      q12enum: "Qual é a tensão nominal do medidor eletrônico mostrada nesta placa de identificação?",
       
-      q12rescorreta: "Medidor eletromecânico",
+      q12rescorreta: "120 V ou 240 V",
       
-      q12_1: "Medidor eletromecânico",
+      q12_1: "127 V",
       
-      q12_2: "Medidor mecânico",
+      q12_2: "220 V",
       
-      q12_3: "Medidor eletrônico",
+      q12_3: "120 V ou 240 V",
       
-      q12image: "images/IMG_7970.png",
-      
-      sorteado: false,
+      q12image: "",
+     
       
       },
       q13: {
       
-      q13enum: "Qual é o tipo do medidor?",
+      q13enum: "Qual é o valor da corrente nominal do medidor eletrônico mostrado nesta placa de identificação?",
       
-      q13rescorreta: "Medidor eletromecânico",
+      q13rescorreta: "Corrente nominal de 15 A",
       
-      q13_1: "Medidor eletromecânico",
+      q13_1: "Corrente nominal de 15 A",
       
-      q13_2: "Medidor mecânico",
+      q13_2: "Corrente nominal de 10 A",
       
-      q13_3: "Medidor eletrônico",
+      q13_3: "Corrente nominal de 5 A",
       
-      q13image: "images/IMG_7970.png",
-      
-      sorteado: false,
-      
+      q13image: "",
+    
       },
       q14: {
       
-      q14enum: "Qual é o tipo do medidor?",
+      q14enum: "Qual é o valor da constante de pulso do medidor eletrônico mostrado nesta placa de identificação?",
       
-      q14rescorreta: "Medidor eletromecânico",
+      q14rescorreta: "10",
       
-      q14_1: "Medidor eletromecânico",
+      q14_1: "10",
       
-      q14_2: "Medidor mecânico",
+      q14_2: "15",
       
-      q14_3: "Medidor eletrônico",
+      q14_3: "120",
       
-      q14image: "images/IMG_7970.png",
-      
-      sorteado: false,
-      
+      q14image: "",
+     
       },
       q15: {
       
-      q15enum: "Qual é o tipo do medidor?",
+      q15enum: "Os novos medidores eletrônicos virão com quais tipos de lacres?",
       
-      q15rescorreta: "Medidor eletromecânico",
+      q15rescorreta: "De policarbonato, com numeração",
       
-      q15_1: "Medidor eletromecânico",
+      q15_1: "De chumbo, com numeração",
       
-      q15_2: "Medidor mecânico",
+      q15_2: "De policarbonato, com numeração",
       
-      q15_3: "Medidor eletrônico",
+      q15_3: "De alumínio, com numeração",
       
-      q15image: "images/IMG_7970.png",
-      
-      sorteado: false,
-      
+      q15image: "",
+     
       },
       q16: {
       
-      q16enum: "Qual é o tipo do medidor?",
+      q16enum: "O registrador de motor de passo é controlado por qual dispositivo?",
       
-      q16rescorreta: "Medidor eletromecânico",
+      q16rescorreta: "Microcontrolador presente na placa eletrônica que emite sinais elétricos de controle",
       
-      q16_1: "Medidor eletromecânico",
+      q16_1: "Disco",
       
-      q16_2: "Medidor mecânico",
+      q16_2: "Microcontrolador presente na placa eletrônica que emite sinais elétricos de controle",
       
-      q16_3: "Medidor eletrônico",
+      q16_3: "Elemento motor",
       
-      q16image: "images/IMG_7970.png",
-      
-      sorteado: false,
+      q16image: "",
       
       },
       q17: {
       
-      q17enum: "Qual é o tipo do medidor?",
+      q17enum: "Qual é o nome do componente eletrônico mostrado na figura?",
       
-      q17rescorreta: "Medidor eletromecânico",
+      q17rescorreta: "Diodo",
       
-      q17_1: "Medidor eletromecânico",
+      q17_1: "Resistor",
       
-      q17_2: "Medidor mecânico",
+      q17_2: "Diodo",
       
-      q17_3: "Medidor eletrônico",
+      q17_3: "Transistor",
       
-      q17image: "images/IMG_7970.png",
-      
-      sorteado: false,
-      
+      q17image: "",
+     
       },
       q18: {
       
-      q18enum: "Qual é o tipo do medidor?",
+      q18enum: "Os diodos permitem a passagem da corrente elétrica?",
       
-      q18rescorreta: "Medidor eletromecânico",
+      q18rescorreta: "Em apenas um sentido",
       
-      q18_1: "Medidor eletromecânico",
+      q18_1: "Em apenas um sentido",
       
-      q18_2: "Medidor mecânico",
+      q18_2: "Nos dois sentidos",
       
-      q18_3: "Medidor eletrônico",
+      q18_3: "Do cátodo para o ânodo",
       
-      q18image: "images/IMG_7970.png",
-      
-      sorteado: false,
-      
+      q18image: "",
+    
       },
       q19: {
       
-      q19enum: "Qual é o tipo do medidor?",
+      q19enum: "Nos diodos, a corrente elétrica flui para qual terminal?",
       
-      q19rescorreta: "Medidor eletromecânico",
+      q19rescorreta: "Do ânodo para o cátodo",
       
-      q19_1: "Medidor eletromecânico",
+      q19_1: "Do ânodo para o cátodo",
       
-      q19_2: "Medidor mecânico",
+      q19_2: "Do ânodo para o cátodo e vice-versa",
       
-      q19_3: "Medidor eletrônico",
+      q19_3: "Do cátodo para o ânodo",
       
-      q19image: "images/IMG_7970.png",
-      
-      sorteado: false,
-      
+      q19image: "",
       },
       q20: {
       
-      q20enum: "Qual é o tipo do medidor?",
+      q20enum: "Qual é o nome deste componente eletrônico?",
       
-      q20rescorreta: "Medidor eletromecânico",
+      q20rescorreta: "Indutor",
       
-      q20_1: "Medidor eletromecânico",
+      q20_1: "Indutor",
       
-      q20_2: "Medidor mecânico",
+      q20_2: "Varistor",
       
-      q20_3: "Medidor eletrônico",
+      q20_3: "Transistor",
       
-      q20image: "images/IMG_7970.png",
-      
-      sorteado: false,
+      q20image: "",
       
       },
       q21: {
       
-      q21enum: "Qual é o tipo do medidor?",
+      q21enum: "Os indutores também são chamados de?",
       
-      q21rescorreta: "Medidor eletromecânico",
+      q21rescorreta: "Bobinas ou solenoides",
       
-      q21_1: "Medidor eletromecânico",
+      q21_1: "Bobinas ou solenoides",
       
-      q21_2: "Medidor mecânico",
+      q21_2: "Bobinas ou resistores",
       
-      q21_3: "Medidor eletrônico",
+      q21_3: "Solenoides ou transistores",
       
-      q21image: "images/IMG_7970.png",
-      
-      sorteado: false,
+      q21image: "",
       
       },
       q22: {
       
-      q22enum: "Qual é o tipo do medidor?",
+      q22enum: "Qual é a principal função de um indutor?",
       
-      q22rescorreta: "Medidor eletromecânico",
+      q22rescorreta: "Armazenar energia por meio de um campo magnético",
       
-      q22_1: "Medidor eletromecânico",
+      q22_1: "Armazenar energia por meio de um campo magnético",
       
-      q22_2: "Medidor mecânico",
+      q22_2: "Permitir a passagem da corrente elétrica somente em um sentido",
       
-      q22_3: "Medidor eletrônico",
+      q22_3: "Acumular cargas elétricas em um circuito",
       
-      q22image: "images/IMG_7970.png",
-      
-      sorteado: false,
+      q22image: "",
       
       },
       q23: {
       
-      q23enum: "Qual é o tipo do medidor?",
+      q23enum: "Qual é uma das funções do microcontrolador?",
       
-      q23rescorreta: "Medidor eletromecânico",
+      q23rescorreta: "Processar os valores dos sinais de tensão e corrente e calcular e registrar o consumo de energia",
       
-      q23_1: "Medidor eletromecânico",
+      q23_1: "Processar os valores dos sinais de tensão e corrente e calcular e registrar o consumo de energia",
       
-      q23_2: "Medidor mecânico",
+      q23_2: "Processar e calcular as informações de corrente",
       
-      q23_3: "Medidor eletrônico",
+      q23_3: "Processar e calcular as informações de tensão",
       
-      q23image: "images/IMG_7970.png",
-      
-      sorteado: false,
+      q23image: "",
       
       },
       q24: {
       
-      q24enum: "Qual é o tipo do medidor?",
+      q24enum: "Qual é o nome do componente eletrônico mostrado na figura?",
       
-      q24rescorreta: "Medidor eletromecânico",
+      q24rescorreta: "Capacitor",
       
-      q24_1: "Medidor eletromecânico",
+      q24_1: "Varistor",
       
-      q24_2: "Medidor mecânico",
+      q24_2: "Capacitor",
       
-      q24_3: "Medidor eletrônico",
+      q24_3: "Diodo",
       
-      q24image: "images/IMG_7970.png",
-      
-      sorteado: false,
+      q24image: "",
       
       },
       q25: {
       
-      q25enum: "Qual é o tipo do medidor?",
-      
-      q25rescorreta: "Medidor eletromecânico",
-      
-      q25_1: "Medidor eletromecânico",
-      
-      q25_2: "Medidor mecânico",
-      
-      q25_3: "Medidor eletrônico",
-      
-      q25image: "images/IMG_7970.png",
-      
-      sorteado: false,
-      
-      },
+        q25enum: "Qual é a principal função do capacitor?",
+        
+        q25rescorreta: "Armazenar energia elétrica por meio de campos elétricos gerados por cargas elétricas",
+        
+        q25_1: "Armazenar energia por meio de um campo magnético",
+        
+        q25_2: "Permitir a passagem da corrente elétrica somente em um sentido",
+        
+        q25_3: "Armazenar energia elétrica por meio de campos elétricos gerados por cargas elétricas",
+        
+        q25image: "",
+        
+        },
       q26: {
       
-      q26enum: "Qual é o tipo do medidor?",
+      q26enum: "Qual é o nome do componente eletrônico mostrado na figura?",
       
-      q26rescorreta: "Medidor eletromecânico",
+      q26rescorreta: "Resistor",
       
-      q26_1: "Medidor eletromecânico",
+      q26_1: "Varistor",
       
-      q26_2: "Medidor mecânico",
+      q26_2: "Resistor",
       
-      q26_3: "Medidor eletrônico",
+      q26_3: "Capacitor",
       
-      q26image: "images/IMG_7970.png",
-      
-      sorteado: false,
+      q26image: "",
       
       },
       q27: {
       
-      q27enum: "Qual é o tipo do medidor?",
+      q27enum: "Qual é a função dos resistores?",
       
-      q27rescorreta: "Medidor eletromecânico",
+      q27rescorreta: "Controlar a passagem da corrente elétrica em determinado ponto do circuito",
       
-      q27_1: "Medidor eletromecânico",
+      q27_1: "Permitir a passagem da corrente elétrica somente em um sentido",
       
-      q27_2: "Medidor mecânico",
+      q27_2: "Acumular cargas elétricas",
       
-      q27_3: "Medidor eletrônico",
+      q27_3: "Controlar a passagem da corrente elétrica em determinado ponto do circuito",
       
-      q27image: "images/IMG_7970.png",
-      
-      sorteado: false,
-      
+      q27image: "",
+     
       },
       q28: {
       
-      q28enum: "Qual é o tipo do medidor?",
+      q28enum: "Os resistores realizam qual tipo de conversão?",
       
-      q28rescorreta: "Medidor eletromecânico",
+      q28rescorreta: "Conversão de energia elétrica em energia térmica",
       
-      q28_1: "Medidor eletromecânico",
+      q28_1: "Conversão de energia elétrica em energia térmica",
       
-      q28_2: "Medidor mecânico",
+      q28_2: "Conversão de energia térmica em energia elétrica",
       
-      q28_3: "Medidor eletrônico",
+      q28_3: "Conversão de energia elétrica em energia cinética",
       
-      q28image: "images/IMG_7970.png",
-      
-      sorteado: false,
+      q28image: "",
       
       },
       q29: {
       
-      q29enum: "Qual é o tipo do medidor?",
+      q29enum: "Qual é o nome deste componente eletrônico?",
       
-      q29rescorreta: "Medidor eletromecânico",
+      q29rescorreta: "Varistor",
       
-      q29_1: "Medidor eletromecânico",
+      q29_1: "Varistor",
       
-      q29_2: "Medidor mecânico",
+      q29_2: "Resistor",
       
-      q29_3: "Medidor eletrônico",
+      q29_3: "Capacitor",
       
-      q29image: "images/IMG_7970.png",
-      
-      sorteado: false,
+      q29image: "",
+     
       
       },
       q30: {
       
-      q30enum: "Qual é o tipo do medidor?",
+      q30enum: "Qual é a função do varistor?",
       
-      q30rescorreta: "Medidor eletromecânico",
+      q30rescorreta: "Proteger os circuitos eletrônicos contra sobretensões",
       
-      q30_1: "Medidor eletromecânico",
+      q30_1: "Proteger os circuitos eletrônicos contra sobretensões",
       
-      q30_2: "Medidor mecânico",
+      q30_2: "Acumular cargas elétricas",
       
-      q30_3: "Medidor eletrônico",
+      q30_3: "Amplificar a corrente elétrica",
       
-      q30image: "images/IMG_7970.png",
-      
-      sorteado: false,
+      q30image: "",
       
       },
       q31: {
       
-      q31enum: "Qual é o tipo do medidor?",
+      q31enum: "O capacitor supressor também recebe o nome de?",
       
-      q31rescorreta: "Medidor eletromecânico",
+      q31rescorreta: "Capacitor de segurança",
       
-      q31_1: "Medidor eletromecânico",
+      q31_1: "Capacitor de segurança",
       
-      q31_2: "Medidor mecânico",
+      q31_2: "Capacitor de ruídos",
       
-      q31_3: "Medidor eletrônico",
+      q31_3: "Capacitor de picos de tensão",
       
-      q31image: "images/IMG_7970.png",
-      
-      sorteado: false,
+      q31image: "",
       
       },
       q32: {
       
-      q32enum: "Qual é o tipo do medidor?",
+      q32enum: "Nas placas eletrônicas, onde ficam localizados os capacitores de supressão?",
       
-      q32rescorreta: "Medidor eletromecânico",
+      q32rescorreta: "Na entrada de alimentação das placas eletrônicas",
       
-      q32_1: "Medidor eletromecânico",
+      q32_1: "Na entrada de alimentação das placas eletrônicas",
       
-      q32_2: "Medidor mecânico",
+      q32_2: "Na saída das fontes de alimentação das placas eletrônicas",
       
-      q32_3: "Medidor eletrônico",
+      q32_3: "Nos terminais de ligação",
       
-      q32image: "images/IMG_7970.png",
-      
-      sorteado: false,
+      q32image: "",
       
       },
       q33: {
       
-      q33enum: "Qual é o tipo do medidor?",
+      q33enum: "Qual é a função deste componente?",
       
-      q33rescorreta: "Medidor eletromecânico",
+      q33rescorreta: "Detectar o sinal da corrente elétrica",
       
-      q33_1: "Medidor eletromecânico",
+      q33_1: "Detectar o sinal da corrente elétrica",
       
-      q33_2: "Medidor mecânico",
+      q33_2: "Detectar o sinal da tensão",
       
-      q33_3: "Medidor eletrônico",
+      q33_3: "Detectar o sinal da resistência do circuito",
       
-      q33image: "images/IMG_7970.png",
-      
-      sorteado: false,
+      q33image: "",
       
       },
       q34: {
       
-      q34enum: "Qual é o tipo do medidor?",
+      q34enum: "Qual é o nome deste componente?",
       
-      q34rescorreta: "Medidor eletromecânico",
+      q34rescorreta: "LED",
       
-      q34_1: "Medidor eletromecânico",
+      q34_1: "LED",
       
-      q34_2: "Medidor mecânico",
+      q34_2: "Diodo zener",
       
-      q34_3: "Medidor eletrônico",
+      q34_3: "Diodo retificador",
       
-      q34image: "images/IMG_7970.png",
+      q33image: "",
       
-      sorteado: false,
       
       },
       q35: {
       
-      q35enum: "Qual é o tipo do medidor?",
+      q35enum: "Qual é a função do LED emissor de pulso nos medidores eletrônicos?",
       
-      q35rescorreta: "Medidor eletromecânico",
+      q35rescorreta: "Pulsar a cada quantidade de energia medida",
       
-      q35_1: "Medidor eletromecânico",
+      q35_1: "Pulsar a cada quantidade de energia medida",
       
-      q35_2: "Medidor mecânico",
+      q35_2: "Pulsar quando a energia circular entre os terminais de linha e carga do medidor",
       
-      q35_3: "Medidor eletrônico",
+      q35_3: "Piscar quando há fluxo da corrente elétrica",
       
-      q35image: "images/IMG_7970.png",
+      q35image: "",
       
-      sorteado: false,
       
       },
+      
       
 }
